@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  margin-left: 70px;
+}
+.readBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gainsboro;
+  }
+  
+  .card {
+    width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-footer {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  

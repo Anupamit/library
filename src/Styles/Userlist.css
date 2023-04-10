@@ -1,0 +1,27 @@
+.userList {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.userList h1 {
+  margin-bottom: 20px;
+}
+
+.usersgroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.user {
+  background: #231e39;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.userdata {
+  padding: 10px;
+}
