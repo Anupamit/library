@@ -8,7 +8,7 @@ const Userlogin = () => {
   let navigate = useNavigate();
   let login = (e) => {
     e.preventDefault();
-    if (email == "admin@gmail.com" && password == 12345) {
+    if (email == "user@gmail.com" && password == 12345) {
       navigate("/userportal");
     } else {
       alert("Invalid credentials");
@@ -26,7 +26,7 @@ const Userlogin = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email address"
+                placeholder="Email as user@gmail.com"
                 className="text"
               />
             </div>
@@ -36,11 +36,11 @@ const Userlogin = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter password"
+                placeholder="Enter password 12345"
                 className="text"
               />
             </div>
-            <button className="btn">Login</button>
+            <button className="btn-a">Login</button>
           </form>
         </div>
       </div>

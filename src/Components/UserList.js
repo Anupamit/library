@@ -18,7 +18,7 @@ const UserList = () => {
       method: "DELETE",
     });
     alert(`${name} will be deleted permanently`);
-    // window.location.reload(); // Reload the page after successful delete
+    window.location.reload();
   };
   return (
     <div className="userList">

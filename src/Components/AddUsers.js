@@ -68,7 +68,7 @@ const AddUsers = () => {
                 placeholder="Type Email"
               />
             </div>
-            <button className="btn">Add User</button>
+            <button className="btn-a">Add User</button>
           </form>
         </div>
       </div>

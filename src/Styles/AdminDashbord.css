@@ -1,4 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 .adminhome1 {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.82);
+  color: #4a4a4a;
+  position: absolute;
+  left: 200px;
+  width: 60%;
+  min-height: 100vh;
+}
+
+.Adminhome {
   display: flex;
   flex-direction: column;
   background: transparent;
@@ -8,6 +22,7 @@
   left: 220px;
   width: 100%;
   min-height: 100vh;
+
 }
 .nav1 {
   position: fixed;
@@ -26,243 +41,303 @@
   box-sizing: border-box;
   z-index: 3;
 }
-
-.txt1 {
-  height: max-content;
-}
-.imgtop {
-  position: relative;
-  top: 60px;
-  background: fixed;
-  background-size: contain;
-  height: 600px;
-  width: 100%;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-.txt1a {
-  z-index: 1;
-  position: absolute;
-  width: 70%;
-  height: 290px;
-  top: 170px;
-  font-family: adobe-garamond-pro, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  background: #f5f5f5e0;
-}
-.txt1a h1 {
-  border-bottom: 2px #019875 solid;
-}
-.expout {
-  position: sticky;
-  top: 60px;
-  margin-top: 15px;
-  width: 100%;
-  z-index: 2;
-  text-align: left;
-}
-.explore {
-  box-shadow: 0px 9px 7px rgba(0, 0, 0, 0.256);
-  color: #4a4a4a;
-  font-size: 19px;
-  height: 45px;
-  text-indent: 15px;
-  width: 100%;
-  background-color: white;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  box-sizing: border-box;
-}
-.aran {
-  width: 60px;
-  background-color: #019875;
-}
-.aran img {
-  width: 26px;
-  height: 17px;
-  margin: 11px 4px;
-}
-
-.btnanim span {
-  width: 0px;
-  height: 40px;
-  position: absolute;
-  z-index: -1;
-  left: 0px;
-  bottom: 0px;
-  transition-duration: 0.6s;
-  transition-property: all;
-}
-.btnanim:hover span {
-  background-color: #019875;
-  width: 60%;
-}
-.btnanim:hover img {
-  animation: ltor 0.6s ease-in-out;
-  cursor: pointer;
-}
-@keyframes ltor {
-  100% {
-    transform: translateX(43px);
-    width: 0px;
-    opacity: 0;
-  }
-}
-.btnanim {
-  top: 117px;
-  left: 895px;
-  position: relative;
-  height: 40px;
-  width: 180px;
+.firstSection {
+  padding: 135px 15px;
+  width: 1350px;
+  background: url("https://www.greenwichlibrary.org/wp-content/uploads/2022/09/Books.jpg")
+    no-repeat;
   display: flex;
-  cursor: pointer;
-}
-.readmo {
-  background-color: #01987582;
-  width: 60%;
-  padding-top: 10px;
-  color: white;
-}
-button {
-  cursor: pointer;
-}
-.menuimg {
-  margin-top: 10px;
-  margin-right: 23px;
-  width: 50px;
-  height: 35px;
-}
-.resumewriting {
-  display: flex;
-  background-color: white;
-  height: 650px;
-  width: 100%;
-}
-.bimg img {
-  margin-top: 45px;
-  width: 79%;
-  object-fit: cover;
-}
-.txt1a-i {
-  z-index: 1;
-  position: relative;
-  width: 60%;
-  height: 290px;
-  top: -201px;
-  left: 286px;
-  font-family: adobe-garamond-pro, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  background: #f5f5f5;
-  box-shadow: 0px 9px 7px rgba(0, 0, 0, 0.256);
-}
-#btnanimid {
-  position: relative;
-  left: 744px;
-  top: 138px;
-}
-#btnanimid img {
-  margin-top: 22px;
-  position: relative;
-  top: -10px;
-  z-index: 2;
-  width: 25px;
-}
-#btnanimid .aran {
-  background-color: rgb(219, 31, 31);
-}
-#btnanimid .readmo {
-  background-color: rgba(219, 31, 31, 0.498);
-}
-#btnanimid:hover span {
-  background-color: rgb(219, 31, 31);
-
-  width: 60%;
-}
-
-.txt1a-i p {
-  text-align: initial;
-  padding-left: 24px;
-}
-.txt1a-i h1 {
-  width: 50%;
-  text-align: initial;
-  text-indent: 20px;
-  border-bottom: 2px solid rgb(219, 31, 31);
-}
-.scrlimg {
-  position: absolute;
-  top: 1310px;
-  z-index: -2;
-  height: 600px;
-  width: 100%;
-  background-size: contain;
-  background: fixed;
-}
-.greenback {
-  margin-top: 25px;
-  width: 79%;
-  height: 350px;
-  background-color: #019875;
-  margin-left: 141px;
-  margin-bottom: 20px;
-}
-.box {
-  box-sizing: border-box;
-  padding: 0px 80px;
-  display: flex;
-  width: 100%;
-  background-color: white;
-  flex-wrap: wrap;
-  height: 600px;
   align-items: center;
-  justify-content: space-evenly;
 }
-.boxes {
-  text-align: initial;
-  width: 41%;
-  padding: 6px;
-  height: 40%;
-  background: #f5f5f5;
-  box-shadow: 0px 9px 7px rgba(0, 0, 0, 0.13);
-}
-.boxes h1 {
-  width: 40%;
-  border-bottom: 2px solid #019875;
-}
-.boxes a {
-  color: #019875;
-}
-#btnanimidA {
+
+.smallCard {
+  background-color: rgba(255, 255, 255, 0.883);
+  width: 900px;
+  height: 200px;
+  padding: 45px;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 100px;
   position: relative;
-  left: 744px;
-  top: 138px;
 }
-#btnanimidA img {
-  margin-top: 22px;
-  position: relative;
-  top: -10px;
-  z-index: 2;
-  width: 25px;
+
+.smallCard h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 60px;
+  color: rgb(61, 61, 61);
+  margin-bottom: 10px;
 }
-#btnanimidA .aran {
-  background-color: #446cb3;
+
+.greenline {
+  height: 2px;
+  width: 600px;
+  background-color: rgb(0, 152, 0);
 }
-#btnanimidA .readmo {
-  position: relative;
-  background-color: #7c98ca;
+
+.smallCard p {
+  font-size: 20px;
+  line-height: 35px;
+  color: rgb(77, 77, 77);
+  margin-top: 10px;
 }
-.lmo {
-  position: relative;
-  z-index: 2;
-}
-#btnanimidA:hover span {
-  width: 100%;
-  background-color: #446cb3;
-  z-index: 1;
+
+.register {
+  background-color: rgb(42, 136, 86);
+  color: white;
+  border: none;
+  padding: 8px;
   position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 180px;
+  height: 40px;
+  font-weight: bolder;
+}
+
+.register:hover {
+  background-color: rgb(105, 188, 105);
+  cursor: pointer;
+}
+
+.second-section {
+  margin: 0px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.second-section img {
+  width: 1100px;
+  height: 400px;
+}
+
+.resumeCard {
+  position: absolute;
+  width: 800px;
+  background-color: white;
+  padding: 35px;
+  bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.resumeCard h1 {
+  font-size: 60px;
+  font-weight: 200;
+  color: rgb(55, 55, 55);
+  font-family: "EB Garamond", serif;
+}
+
+.resumeCard p {
+  padding: 15px 0px;
+  font-size: 20px;
+}
+
+.redline {
+  height: 2px;
+  width: 600px;
+  background-color: rgb(178, 21, 0);
+}
+.appoinmentBTN {
+  color: white;
+  background-color: rgb(251, 42, 42);
+  border: none;
+  padding: 8px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 180px;
+  height: 40px;
+  font-weight: bolder;
+}
+
+.appoinmentBTN:hover {
+  background-color: rgb(250, 70, 70);
+  cursor: pointer;
+}
+
+.thirdsection {
+  background: url("https://www.greenwichlibrary.org/wp-content/uploads/2016/04/Pattern-BG-Main.svg");
+
+  padding: 30px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventsdetails {
+  width: 900px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #019875;
+  padding: 55px;
+  border-radius: 15px;
+}
+.eventsdetails h1 {
+  font-family: "Garamond";
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.printBTN {
+  color: rgb(98, 98, 98);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px;
+  margin-top: 10px;
+  width: 250px;
+  font-weight: bolder;
+}
+
+.printBTN:hover {
+  background-color: rgb(205, 205, 205);
+  cursor: pointer;
+}
+
+.FourthSection {
+  height: 600px;
+  padding: 55px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards4 {
+  width: 505px;
+
+  padding: 15px 30px;
+  margin: 8px 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.cards4 h1 {
+  font-size: 50px;
+  font-weight: 200;
+  color: rgb(55, 55, 55);
+  font-family: "EB Garamond", serif;
+}
+
+.greenline1 {
+  height: 2px;
+  width: 480px;
+  background-color: rgb(0, 152, 0);
+  margin: 8px 0px;
+}
+
+.cards4 p {
+  margin: 20px 0px;
+  font-size: 18px;
+}
+
+.cards4 a {
+  color: #019875;
+  font-size: 18px;
+}
+
+.FifthSection {
+  padding: 15px;
+}
+
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 35px;
+  width: 1040px;
+  margin-left: 60px;
+  position: relative;
+}
+
+.bookrow {
+  padding: 25px;
+}
+
+.bookrow img {
+  margin: 0px 45px;
+}
+
+.sixthSection {
+  display: flex;
+  color: white;
+  background-color: #019875;
+  height: 250px;
+  margin: 45px 0px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.authorname {
+  padding: 0px 20px;
+  margin: 0px 10px;
+}
+
+.cursive {
+  padding: 5px 25px;
+  width: 900px;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+}
+
+.seventhSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.signcard1 {
+  text-align: center;
+  background-color: #34c7a5;
+  height: 350px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signcard2 {
+  text-align: center;
+  background-color: #019875;
+  height: 350px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signpara {
+  width: 440px;
+  color: white;
+  font-size: 22px;
+}
+
+.signhead {
+  color: white;
+  margin: 15px 0px;
+  font-size: 30px;
+}
+
+.printBTN1 {
+  color: rgb(98, 98, 98);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px;
+  margin-top: 10px;
+  width: 150px;
+  font-weight: bolder;
+}
+
+.printBTN1:hover {
+  background-color: rgb(205, 205, 205);
+  cursor: pointer;
 }

@@ -73,7 +73,7 @@ const AddBooks = () => {
               placeholder="Image of the book"
             />
           </div>
-            <button className="btn">Add Book</button>
+            <button className="btn-a">Add Book</button>
           </form>
         </div>
       </div>

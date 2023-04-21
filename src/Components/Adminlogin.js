@@ -9,8 +9,6 @@ const Adminlogin = () => {
 
   let login = (e) => {
     e.preventDefault();
-    // let data = {email,password} //data from input
-
     //admin validation
     if (email == "admin@gmail.com" && password == 12345) {
       navigate("/adminportal");
@@ -30,7 +28,7 @@ const Adminlogin = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email address"
+                placeholder="Email admin@gmail.com"
                 className="text"
               />
             </div>
@@ -40,11 +38,11 @@ const Adminlogin = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter password"
+                placeholder="Enter password 12345"
                 className="text"
               />
             </div>
-            <button className="btn">Login</button>
+            <button className="btn-a">Login</button>
           </form>
         </div>
       </div>
