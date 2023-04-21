@@ -10,7 +10,7 @@ const BookList = () => {
 
   useEffect(() => {
     let fetchData = async () => {
-      let reponse = await fetch("http://localhost:4000/books");
+      let reponse = await fetch("https://libraryjson.onrender.com/books");
       let data = await reponse.json();
       setBooks(data);
     };
@@ -27,7 +27,7 @@ const BookList = () => {
   };
    //delete a book from server
   let handleDelete = (id, title) => {
-    fetch(`http://localhost:4000/books/${id}`, {
+    fetch(`https://libraryjson.onrender.com/books/${id}`, {
       method: "DELETE",
     });
     alert(`${title} will be deleted permanently`);

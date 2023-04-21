@@ -19,7 +19,7 @@ const AddBooks = () => {
       imageLink,
     };
     //posting to server
-    fetch("http://localhost:4000/books", {
+    fetch("https://libraryjson.onrender.com/books", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(bookData),

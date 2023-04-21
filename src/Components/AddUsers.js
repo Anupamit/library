@@ -14,7 +14,7 @@ const AddUsers = () => {
     //data to be posted
     let userData = { name,age, phoneNumber,email, };
     //posting to server
-    fetch("http://localhost:4000/users", {
+    fetch("https://libraryjson.onrender.com/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),

@@ -5,7 +5,7 @@ const UserList = () => {
   let [users, setUsers] = useState([]);
   useEffect(() => {
     let fetchData = async () => {
-      let reponse = await fetch("http://localhost:4000/users");
+      let reponse = await fetch("https://libraryjson.onrender.com/users");
       let data = await reponse.json();
       setUsers(data);
     };
@@ -14,7 +14,7 @@ const UserList = () => {
 
   //delete a book from server
   let handleDelete = (id, name) => {
-    fetch(`http://localhost:4000/users/${id}`, {
+    fetch(`https://libraryjson.onrender.com/users/${id}`, {
       method: "DELETE",
     });
     alert(`${name} will be deleted permanently`);

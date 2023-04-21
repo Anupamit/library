@@ -10,7 +10,7 @@ const ReadBook = () => {
     console.log(params);
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch(`http://localhost:4000/books/${params.id}`)
+            let response = await fetch(`https://libraryjson.onrender.com/books/${params.id}`)
             let data = await response.json()
             setBook(data)
         }
