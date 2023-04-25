@@ -35,20 +35,20 @@ const BookList = () => {
   };
   return (
     <div id="large-th">
-      <div class="container">
+      <div className="container">
         <h1> A list of books : {books.length}</h1>
         <br />
         <div id="list-th">
           {books.map((data) => (
-            <div class="book">
-              <div class="cover">
+            <div className="book">
+              <div className="cover">
                 <img src={data.imageLink} alt="imgerr" onClick={()=>handleRead(data.id)}/>
               </div>
-              <div class="description">
-                <p class="title">
+              <div className="description">
+                <p className="title">
                 {data.title}
                   <br />
-                  <span class="author">Written by: {data.author}</span>
+                  <span className="author">Written by: {data.author}</span>
                 </p>
               </div>
               <div className="deletebtn">
